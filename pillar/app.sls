@@ -1,2 +1,2 @@
 app:
-  foo: bar
+  foo: HELLO

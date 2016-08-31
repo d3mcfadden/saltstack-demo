@@ -1,0 +1,5 @@
+digitalocean-ubuntu:
+  - proxy01.saltdemo.net
+  - app01.saltdemo.net
+  - app02.saltdemo.net
+  - app03.saltdemo.net

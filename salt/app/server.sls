@@ -1,6 +1,5 @@
 api:
   dockerng.running:
-    - name: api
     - image: d3mcfadden/saltstack-demo:latest
     - restart_policy: always
     - ports:
@@ -8,4 +7,4 @@ api:
     - port_bindings:
       - "5000:80"
     - environment:
-      - FOO: {{ pillar.get('app:foo') }}
+      - FOO: {{ salt['pillar.get']('app:foo') }}

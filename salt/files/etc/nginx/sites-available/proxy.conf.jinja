@@ -1,6 +1,6 @@
 upstream app-upstream {
-{% for server in backends -%}
-server {{ server }}:5000;
+{% for server,addrs in salt['mine.get']('app*', 'network.ip_addrs').items()  -%}
+server {{ addrs[0] }}:5000;
 {% endfor -%}
 }
 

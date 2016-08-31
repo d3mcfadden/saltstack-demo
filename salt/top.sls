@@ -1,11 +1,11 @@
 base:
   '*':
     - base
-    - users
+    - users.deploy
 
   'proxy*':
     - proxy
 
-  'app':
-    - app
+  'app*':
     - docker
+    - app
